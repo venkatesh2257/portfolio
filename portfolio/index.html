@@ -3,40 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Venkatesh | Android Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<body class="bg-gray-50 text-gray-900">
+
+<!-- Navbar -->
+<header class="fixed w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <h1 class="text-2xl font-bold text-indigo-600">Venkatesh</h1>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#about" class="hover:text-indigo-600">About</a>
+            <a href="#skills" class="hover:text-indigo-600">Skills</a>
+            <a href="#projects" class="hover:text-indigo-600">Projects</a>
+            <a href="#demo" class="hover:text-indigo-600">Demo</a>
+            <a href="#contact" class="hover:text-indigo-600">Contact</a>
         </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This section contains information about me, my background, and my skills.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>This section showcases my projects with descriptions and links.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>This section provides my contact information and a form for inquiries.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2023 My Portfolio</p>
-    </footer>
-    
-    <script src="js/script.js"></script>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="about" class="min-h-screen flex items-center justify-center text-center px-6">
+    <div>
+        <img src="https://via.placeholder.com/150" alt="Venkatesh" class="mx-auto rounded-full w-40 h-40 shadow-lg">
+        <h2 class="mt-6 text-4xl font-extrabold text-indigo-600">Venkatesh Madipalli</h2>
+        <p class="mt-4 text-lg max-w-2xl mx-auto">Senior Mobile App Developer | Android & Flutter Specialist with 4+ years of experience building scalable, user-friendly mobile applications.</p>
+        <div class="mt-6 space-x-4">
+            <a href="https://github.com/venkatesh2257" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">GitHub</a>
+            <a href="https://www.linkedin.com/in/madipalli-venkatesh-229b5b143/" class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900">LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="font-semibold">Android</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="font-semibold">Flutter</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="font-semibold">Java</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="font-semibold">Firebase</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="font-semibold">CI/CD</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="font-semibold">AWS</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Project Card -->
+            <div class="bg-white rounded-xl shadow hover:shadow-lg p-6">
+                <h3 class="font-bold text-lg">Lyrik App</h3>
+                <p class="mt-2 text-sm text-gray-600">A church lyrics app with real-time Firestore integration.</p>
+                <a href="https://lyrik.in/" target="_blank" class="text-indigo-600 hover:underline mt-3 inline-block">View Demo</a>
+            </div>
+            <div class="bg-white rounded-xl shadow hover:shadow-lg p-6">
+                <h3 class="font-bold text-lg">Sajini Garments App</h3>
+                <p class="mt-2 text-sm text-gray-600">E-commerce app for t-shirt ordering & customization.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow hover:shadow-lg p-6">
+                <h3 class="font-bold text-lg">Water Plant App</h3>
+                <p class="mt-2 text-sm text-gray-600">App to order water with secure payment gateway.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo / Figma -->
+<section id="demo" class="py-20 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-6">UI/UX Demos</h2>
+    <p class="max-w-2xl mx-auto text-gray-700">Explore some of my design concepts and prototypes on Figma and live apps.</p>
+    <a href="https://www.figma.com" class="mt-6 inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">View Figma</a>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Contact</h2>
+        <p class="text-gray-700">Let’s connect and discuss new opportunities.</p>
+        <div class="mt-6 space-y-2">
+            <p><strong>Email:</strong> <a href="mailto:vinodjc007@gmail.com" class="text-indigo-600">vinodjc007@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 9885394334</p>
+        </div>
+        <form class="mt-8 space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg">
+            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-lg">
+            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border rounded-lg"></textarea>
+            <button class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Venkatesh Madipalli | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
